@@ -29,17 +29,25 @@ namespace Is_på_lager
         
         private void load_click(object sender, RoutedEventArgs e)
         {
-            lakrids_antal.Text = File.ReadAllText(@"is\lakrids");
-            karamel_antal.Text = File.ReadAllText(@"is\karamel");
-            chokolade_antal.Text = File.ReadAllText(@"is\chokolade");
-            pistacie_antal.Text = File.ReadAllText(@"is\pistacie");
+            lakrids_antal.Text = File.ReadAllText(@"is\lakrids.txt");
+            karamel_antal.Text = File.ReadAllText(@"is\karamel.txt");
+            chokolade_antal.Text = File.ReadAllText(@"is\chokolade.txt");
+            pistacie_antal.Text = File.ReadAllText(@"is\pistacie.txt");
+            jordbær_antal.Text = File.ReadAllText(@"is\jordbær.txt");
+            solbær_antal.Text = File.ReadAllText(@"is\solbær.txt");
+            hindbær_antal.Text = File.ReadAllText(@"is\hindbær.txt");
+            vanilje_antal.Text = File.ReadAllText(@"is\vanilje.txt");
         }
         private void save_click(object sender, RoutedEventArgs e)
         {
-            File.WriteAllText(@"is\lakrids", lakrids_antal.Text);
-            File.WriteAllText(@"is\karamel", karamel_antal.Text);
-            File.WriteAllText(@"is\chokolade", chokolade_antal.Text);
-            File.WriteAllText(@"is\pistacie", pistacie_antal.Text);
+            File.WriteAllText(@"is\lakrids.txt", lakrids_antal.Text);
+            File.WriteAllText(@"is\karamel.txt", karamel_antal.Text);
+            File.WriteAllText(@"is\chokolade.txt", chokolade_antal.Text);
+            File.WriteAllText(@"is\pistacie.txt", pistacie_antal.Text);
+            File.WriteAllText(@"is\jordbær.txt", jordbær_antal.Text);
+            File.WriteAllText(@"is\solbær.txt", solbær_antal.Text);
+            File.WriteAllText(@"is\hindbær.txt", hindbær_antal.Text);
+            File.WriteAllText(@"is\vanilje.txt", vanilje_antal.Text);
         }
         private void lakrids_minus_click(object sender, RoutedEventArgs e)
         {
