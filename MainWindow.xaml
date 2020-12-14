@@ -1,0 +1,151 @@
+﻿<Window x:Class="Is_på_lager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Is_på_lager"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="625" Width="200">
+
+    <Border Padding="10">
+
+        <StackPanel>
+
+            <Button Click="load_click" Content="Load" FontSize="20" />
+            <Button Click="save_click" Content="Save" FontSize="20" Margin="0 10"/>
+
+            <TextBlock Text="Is På Lager." FontWeight="Bold" FontSize="13" TextAlignment="Center"/>
+
+            <TextBlock Text="Lakrids" TextAlignment="Center" Margin="0 10"/>
+                <!-- Is justering af antal -->
+                <Grid>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Click="lakrids_minus_click" Grid.Column="0" Content="-" Background="#000" Foreground="#fff" />
+                    <TextBox x:Name="lakrids_antal" Text="100" Grid.Column="1" Background="#000" Foreground="#fff" TextAlignment="Center" />
+                    <Button Click="lakrids_plus_click" Grid.Column="2" Content="+" Background="#000" Foreground="#fff" />
+
+                </Grid>
+
+            <TextBlock Text="Karamel" TextAlignment="Center" Margin="0 10"/>
+            <!-- Is justering af antal -->
+            <Grid>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Click="karamel_minus_click" Grid.Column="0" Content="-" Background="#ff6600" Foreground="#fff" />
+                <TextBox x:Name="karamel_antal" Text="100" Grid.Column="1" Background="#ff6600" Foreground="#fff" TextAlignment="Center" />
+                <Button Click="karamel_plus_click" Grid.Column="2" Content="+" Background="#ff6600" Foreground="#fff" />
+
+            </Grid>
+
+            <TextBlock Text="Chokolade" TextAlignment="Center" Margin="0 10"/>
+            <!-- Is justering af antal -->
+            <Grid>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Click="chokolade_minus_click" Grid.Column="0" Content="-" Background="#663300" Foreground="#fff" />
+                <TextBox x:Name="chokolade_antal" Text="100" Grid.Column="1" Background="#663300" Foreground="#fff" TextAlignment="Center" />
+                <Button Click="chokolade_plus_click" Grid.Column="2" Content="+" Background="#663300" Foreground="#fff" />
+
+            </Grid>
+
+            <TextBlock Text="Pistacie" TextAlignment="Center" Margin="0 10"/>
+            <!-- Is justering af antal -->
+            <Grid>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Click="pistacie_minus_click" Grid.Column="0" Content="-" Background="#66ff66" Foreground="#000" />
+                <TextBox x:Name="pistacie_antal" Text="100" Grid.Column="1" Background="#66ff66" Foreground="#000" TextAlignment="Center" />
+                <Button Click="pistacie_plus_click" Grid.Column="2" Content="+" Background="#66ff66" Foreground="#000" />
+
+            </Grid>
+
+            <TextBlock Text="Jordbær" TextAlignment="Center" Margin="0 10"/>
+            <!-- Is justering af antal -->
+            <Grid>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Click="jordbær_minus_click" Grid.Column="0" Content="-" Background="#cc0000" Foreground="#fff" />
+                <TextBox x:Name="jordbær_antal" Text="100" Grid.Column="1" Background="#cc0000" Foreground="#fff" TextAlignment="Center" />
+                <Button Click="jordbær_plus_click" Grid.Column="2" Content="+" Background="#cc0000" Foreground="#fff" />
+
+            </Grid>
+
+            <TextBlock Text="Solbær" TextAlignment="Center" Margin="0 10"/>
+            <!-- Is justering af antal -->
+            <Grid>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Click="solbær_minus_click" Grid.Column="0" Content="-" Background="#222" Foreground="#fff" />
+                <TextBox x:Name="solbær_antal" Text="100" Grid.Column="1" Background="#222" Foreground="#fff" TextAlignment="Center" />
+                <Button Click="solbær_plus_click" Grid.Column="2" Content="+" Background="#222" Foreground="#fff" />
+
+            </Grid>
+
+            <TextBlock Text="Hindbær" TextAlignment="Center" Margin="0 10"/>
+            <!-- Is justering af antal -->
+            <Grid>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Click="hindbær_minus_click" Grid.Column="0" Content="-" Background="#990000" Foreground="#fff" />
+                <TextBox x:Name="hindbær_antal" Text="100" Grid.Column="1" Background="#990000" Foreground="#fff" TextAlignment="Center" />
+                <Button Click="hindbær_plus_click" Grid.Column="2" Content="+" Background="#990000" Foreground="#fff" />
+
+            </Grid>
+
+            <TextBlock Text="Vanilje" TextAlignment="Center" Margin="0 10"/>
+            <!-- Is justering af antal -->
+            <Grid>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Click="vanilje_minus_click" Grid.Column="0" Content="-" Background="#ffffcc" Foreground="#000" />
+                <TextBox x:Name="vanilje_antal" Text="100" Grid.Column="1" Background="#ffffcc" Foreground="#000" TextAlignment="Center" />
+                <Button Click="vanilje_plus_click" Grid.Column="2" Content="+" Background="#ffffcc" Foreground="#000" />
+
+            </Grid>
+        
+        </StackPanel>
+        
+    </Border>
+
+</Window>
