@@ -4,6 +4,45 @@
              xmlns:local="clr-namespace:Is_på_lager"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style x:Key="TitleBlock" TargetType="TextBlock">
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="0 0 0 10"/>
+        </Style>
+
+        <Style x:Key="Lakrids" TargetType="Control">
+            <Setter Property="Background" Value="#000"/>
+            <Setter Property="Foreground" Value="#fff"/>
+        </Style>
+
+        <Style x:Key="Karamel" TargetType="Control">
+            <Setter Property="Background" Value="#ff6600"/>
+            <Setter Property="Foreground" Value="#fff"/>
+        </Style>
+        <Style x:Key="Chokolade" TargetType="Control">
+            <Setter Property="Background" Value="#663300"/>
+            <Setter Property="Foreground" Value="#fff"/>
+        </Style>
+        <Style x:Key="Pistacie" TargetType="Control">
+            <Setter Property="Background" Value="#66ff66"/>
+            <Setter Property="Foreground" Value="#000"/>
+        </Style>
+        <Style x:Key="Jordbær" TargetType="Control">
+            <Setter Property="Background" Value="#cc0000"/>
+            <Setter Property="Foreground" Value="#fff"/>
+        </Style>
+        <Style x:Key="Solbær" TargetType="Control">
+            <Setter Property="Background" Value="#222"/>
+            <Setter Property="Foreground" Value="#fff"/>
+        </Style>
+        <Style x:Key="Hindbær" TargetType="Control">
+            <Setter Property="Background" Value="#990000"/>
+            <Setter Property="Foreground" Value="#fff"/>
+        </Style>
+        <Style x:Key="Vanilje" TargetType="Control">
+            <Setter Property="Background" Value="#ffffcc"/>
+            <Setter Property="Foreground" Value="#000"/>
+        </Style>
     </Application.Resources>
 </Application>

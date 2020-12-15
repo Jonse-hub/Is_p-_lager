@@ -20,3 +20,4 @@ C:\Users\jona444j\Documents\Code\Projecter\Is_på_lager\obj\Debug\net5.0-windows
 C:\Users\jona444j\Documents\Code\Projecter\Is_på_lager\obj\Debug\net5.0-windows\ref\Is_på_lager.dll
 C:\Users\jona444j\Documents\Code\Projecter\Is_på_lager\obj\Debug\net5.0-windows\Is_på_lager.pdb
 C:\Users\jona444j\Documents\Code\Projecter\Is_på_lager\obj\Debug\net5.0-windows\Is_på_lager.genruntimeconfig.cache
+C:\Users\jona444j\Documents\Code\Projecter\Is_på_lager\obj\Debug\net5.0-windows\App.baml
