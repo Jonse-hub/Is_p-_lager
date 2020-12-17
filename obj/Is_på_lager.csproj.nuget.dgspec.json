@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jona444j\\Documents\\Code\\Projecter\\Is_på_lager\\Is_på_lager.csproj": {}
+    "C:\\Users\\jona444j\\Documents\\Code\\Projecter\\New folder\\Is_p-_lager\\Is_på_lager.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jona444j\\Documents\\Code\\Projecter\\Is_på_lager\\Is_på_lager.csproj": {
+    "C:\\Users\\jona444j\\Documents\\Code\\Projecter\\New folder\\Is_p-_lager\\Is_på_lager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jona444j\\Documents\\Code\\Projecter\\Is_på_lager\\Is_på_lager.csproj",
+        "projectUniqueName": "C:\\Users\\jona444j\\Documents\\Code\\Projecter\\New folder\\Is_p-_lager\\Is_på_lager.csproj",
         "projectName": "Is_på_lager",
-        "projectPath": "C:\\Users\\jona444j\\Documents\\Code\\Projecter\\Is_på_lager\\Is_på_lager.csproj",
+        "projectPath": "C:\\Users\\jona444j\\Documents\\Code\\Projecter\\New folder\\Is_p-_lager\\Is_på_lager.csproj",
         "packagesPath": "C:\\Users\\jona444j\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jona444j\\Documents\\Code\\Projecter\\Is_på_lager\\obj\\",
+        "outputPath": "C:\\Users\\jona444j\\Documents\\Code\\Projecter\\New folder\\Is_p-_lager\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jona444j\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -21,3 +21,26 @@ C:\Users\jona444j\Documents\Code\Projecter\Is_på_lager\obj\Debug\net5.0-windows
 C:\Users\jona444j\Documents\Code\Projecter\Is_på_lager\obj\Debug\net5.0-windows\Is_på_lager.pdb
 C:\Users\jona444j\Documents\Code\Projecter\Is_på_lager\obj\Debug\net5.0-windows\Is_på_lager.genruntimeconfig.cache
 C:\Users\jona444j\Documents\Code\Projecter\Is_på_lager\obj\Debug\net5.0-windows\App.baml
+C:\Users\jona444j\Documents\Code\Projecter\New folder\Is_p-_lager\bin\Debug\net5.0-windows\Is_på_lager.exe
+C:\Users\jona444j\Documents\Code\Projecter\New folder\Is_p-_lager\bin\Debug\net5.0-windows\Is_på_lager.deps.json
+C:\Users\jona444j\Documents\Code\Projecter\New folder\Is_p-_lager\bin\Debug\net5.0-windows\Is_på_lager.runtimeconfig.json
+C:\Users\jona444j\Documents\Code\Projecter\New folder\Is_p-_lager\bin\Debug\net5.0-windows\Is_på_lager.runtimeconfig.dev.json
+C:\Users\jona444j\Documents\Code\Projecter\New folder\Is_p-_lager\bin\Debug\net5.0-windows\Is_på_lager.dll
+C:\Users\jona444j\Documents\Code\Projecter\New folder\Is_p-_lager\bin\Debug\net5.0-windows\ref\Is_på_lager.dll
+C:\Users\jona444j\Documents\Code\Projecter\New folder\Is_p-_lager\bin\Debug\net5.0-windows\Is_på_lager.pdb
+C:\Users\jona444j\Documents\Code\Projecter\New folder\Is_p-_lager\obj\Debug\net5.0-windows\Is_på_lager.csprojAssemblyReference.cache
+C:\Users\jona444j\Documents\Code\Projecter\New folder\Is_p-_lager\obj\Debug\net5.0-windows\MainWindow.g.cs
+C:\Users\jona444j\Documents\Code\Projecter\New folder\Is_p-_lager\obj\Debug\net5.0-windows\App.g.cs
+C:\Users\jona444j\Documents\Code\Projecter\New folder\Is_p-_lager\obj\Debug\net5.0-windows\Is_på_lager_MarkupCompile.cache
+C:\Users\jona444j\Documents\Code\Projecter\New folder\Is_p-_lager\obj\Debug\net5.0-windows\Is_på_lager_MarkupCompile.lref
+C:\Users\jona444j\Documents\Code\Projecter\New folder\Is_p-_lager\obj\Debug\net5.0-windows\App.baml
+C:\Users\jona444j\Documents\Code\Projecter\New folder\Is_p-_lager\obj\Debug\net5.0-windows\MainWindow.baml
+C:\Users\jona444j\Documents\Code\Projecter\New folder\Is_p-_lager\obj\Debug\net5.0-windows\Is_på_lager.g.resources
+C:\Users\jona444j\Documents\Code\Projecter\New folder\Is_p-_lager\obj\Debug\net5.0-windows\Is_på_lager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jona444j\Documents\Code\Projecter\New folder\Is_p-_lager\obj\Debug\net5.0-windows\Is_på_lager.AssemblyInfoInputs.cache
+C:\Users\jona444j\Documents\Code\Projecter\New folder\Is_p-_lager\obj\Debug\net5.0-windows\Is_på_lager.AssemblyInfo.cs
+C:\Users\jona444j\Documents\Code\Projecter\New folder\Is_p-_lager\obj\Debug\net5.0-windows\Is_på_lager.csproj.CoreCompileInputs.cache
+C:\Users\jona444j\Documents\Code\Projecter\New folder\Is_p-_lager\obj\Debug\net5.0-windows\Is_på_lager.dll
+C:\Users\jona444j\Documents\Code\Projecter\New folder\Is_p-_lager\obj\Debug\net5.0-windows\ref\Is_på_lager.dll
+C:\Users\jona444j\Documents\Code\Projecter\New folder\Is_p-_lager\obj\Debug\net5.0-windows\Is_på_lager.pdb
+C:\Users\jona444j\Documents\Code\Projecter\New folder\Is_p-_lager\obj\Debug\net5.0-windows\Is_på_lager.genruntimeconfig.cache

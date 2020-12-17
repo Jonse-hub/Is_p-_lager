@@ -5,158 +5,227 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Is_på_lager"
         mc:Ignorable="d"
-        Title="MainWindow" Height="700" Width="600">
+        Title="MainWindow" Height="700" Width="1200">
 
     <Border Padding="10">
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="5*"/>
-            </Grid.ColumnDefinitions> 
-                <StackPanel Grid.Column="0">
-                    <TextBlock Text="Is På Lager" Style="{StaticResource TitleBlock}"/>
-                    <Button Click="load_click" Content="Load" FontSize="20" />
-                    <Button Click="save_click" Content="Save" FontSize="20" Margin="0 0 0 10"/>
+    
+        <StackPanel>
 
-                    <Button Click="lakrids_info_click" Content="Lakrids" Style="{StaticResource Lakrids}"/>
-                        <!-- Is justering af antal -->
-                        <Grid>
-                         
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                            </Grid.ColumnDefinitions>
- 
-                            <Button Click="lakrids_minus_click" Grid.Column="0" Content="-" Style="{StaticResource Lakrids}" Margin="0 0 0 5"/>
-                            <TextBox x:Name="lakrids_antal" Text="100" Grid.Column="1" TextAlignment="Center"  Style="{StaticResource Lakrids}" Margin="0 0 0 5"/>
-                            <Button Click="lakrids_plus_click" Grid.Column="2" Content="+" Style="{StaticResource Lakrids}" Margin="0 0 0 5"/>
- 
-                        </Grid>
- 
-                    <Button Click="karamel_info_click" Content="Karamel" Style="{StaticResource Karamel}"/>
+            <DockPanel>
+                <TextBlock Text="Tjent I Alt: " FontSize="20"/>
+                <TextBox x:Name="i_alt_tjent" FontSize="20" TextAlignment="Center" Background="#ffcc00" Margin="0 0 25 0"/>
+                <TextBlock Text="Tjent I Dag: " FontSize="20"/>
+                <TextBox x:Name="tjent_dag" FontSize="20" TextAlignment="Center" Background="#ffcc00" Margin="0 0 25 0"/>
+                <Button Click="save_click" Content="Save" FontSize="20"/>
+            </DockPanel>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.25*"/>
+                    <ColumnDefinition Width="0.5*"/>
+                    <ColumnDefinition Width="0.75*"/>
+                    <ColumnDefinition Width="0.75*"/>
+                    <ColumnDefinition Width="0.75*"/>
+                    <ColumnDefinition Width="1.5*"/>
+                    <ColumnDefinition Width="13.5*"/>
+                    
+                </Grid.ColumnDefinitions>
+            
+                <StackPanel Grid.Column="0">
+                <TextBlock Text="Type" Style="{StaticResource TitleBlock}"/>
+                    <Button Click="lakrids_info_click" Content="Lakrids" Style="{StaticResource Lakrids}" Margin="0 0 0 5"/>
+                    <Button Click="karamel_info_click" Content="Karamel" Style="{StaticResource Karamel}" Margin="0 0 0 5"/>
+                    <Button Click="chokolade_info_click" Content="Chokolade" Style="{StaticResource Chokolade}" Margin="0 0 0 5"/>
+                    <Button Click="pistacie_info_click" Content="Pistacie" Style="{StaticResource Pistacie}" Margin="0 0 0 5"/>
+                    <Button Click="jordbær_info_click" Content="Jordbær" Style="{StaticResource Jordbær}" Margin="0 0 0 5"/>
+                    <Button Click="solbær_info_click" Content="Solbær" Style="{StaticResource Solbær}" Margin="0 0 0 5"/>
+                    <Button Click="hindbær_info_click" Content="Hindbær" Style="{StaticResource Hindbær}" Margin="0 0 0 5"/>
+                    <Button Click="vanilje_info_click" Content="Vanilje" Style="{StaticResource Vanilje}" Margin="0 0 0 5"/>
+                    
+                </StackPanel>
+
+                <StackPanel Grid.Column="1">
+                    <TextBlock Text="Kost" Style="{StaticResource TitleBlock}"/>
+                    <TextBox x:Name="lakrids_kost" IsReadOnly="true" Text="10" TextAlignment="Center"  Style="{StaticResource Lakrids}" Margin="0 0 0 7.25"/>
+                    <TextBox x:Name="karamel_kost" IsReadOnly="true" Text="10" TextAlignment="Center"  Style="{StaticResource Karamel}" Margin="0 0 0 7.25"/>
+                    <TextBox x:Name="chokolade_kost" IsReadOnly="true" Text="10" TextAlignment="Center"  Style="{StaticResource Chokolade}" Margin="0 0 0 7.25"/>
+                    <TextBox x:Name="pistacie_kost" IsReadOnly="true" Text="10" TextAlignment="Center"  Style="{StaticResource Pistacie}" Margin="0 0 0 7.25"/>
+                    <TextBox x:Name="jordbær_kost" IsReadOnly="true" Text="10" TextAlignment="Center"  Style="{StaticResource Jordbær}" Margin="0 0 0 7.25"/>
+                    <TextBox x:Name="solbær_kost" IsReadOnly="true" Text="10" TextAlignment="Center"  Style="{StaticResource Solbær}" Margin="0 0 0 7.25"/>
+                    <TextBox x:Name="hindbær_kost" IsReadOnly="true" Text="10" TextAlignment="Center"  Style="{StaticResource Hindbær}" Margin="0 0 0 7.25"/>
+                    <TextBox x:Name="vanilje_kost" IsReadOnly="true" Text="10" TextAlignment="Center"  Style="{StaticResource Vanilje}" Margin="0 0 0 7.25"/>
+                    
+                </StackPanel>
+
+                <StackPanel Grid.Column="2">
+                    <TextBlock Text="Afgift" Style="{StaticResource TitleBlock}"/>
+                    <TextBox x:Name="lakrids_afgift" IsReadOnly="true" Text="5" TextAlignment="Center"  Style="{StaticResource Lakrids}" Margin="0 0 0 7.25"/>
+                    <TextBox x:Name="karamel_afgift" IsReadOnly="true" Text="5" TextAlignment="Center"  Style="{StaticResource Karamel}" Margin="0 0 0 7.25"/>
+                    <TextBox x:Name="chokolade_afgift" IsReadOnly="true" Text="5" TextAlignment="Center"  Style="{StaticResource Chokolade}" Margin="0 0 0 7.25"/>
+                    <TextBox x:Name="pistacie_afgift" IsReadOnly="true" Text="5" TextAlignment="Center"  Style="{StaticResource Pistacie}" Margin="0 0 0 7.25"/>
+                    <TextBox x:Name="jordbær_afgift" IsReadOnly="true" Text="5" TextAlignment="Center"  Style="{StaticResource Jordbær}" Margin="0 0 0 7.25"/>
+                    <TextBox x:Name="solbær_afgift" IsReadOnly="true" Text="5" TextAlignment="Center"  Style="{StaticResource Solbær}" Margin="0 0 0 7.25"/>
+                    <TextBox x:Name="hindbær_afgift" IsReadOnly="true" Text="5" TextAlignment="Center"  Style="{StaticResource Hindbær}" Margin="0 0 0 7.25"/>
+                    <TextBox x:Name="vanilje_afgift" IsReadOnly="true" Text="5" TextAlignment="Center"  Style="{StaticResource Vanilje}" Margin="0 0 0 7.25"/>
+                    
+                    
+                </StackPanel>
+
+                <StackPanel Grid.Column="3">
+                    <TextBlock Text="Tjent" Style="{StaticResource TitleBlock}"/>
+                    <TextBox x:Name="lakrids_tjent" TextAlignment="Center"  Style="{StaticResource Lakrids}" Margin="0 0 0 7.25"/>
+                    <TextBox x:Name="karamel_tjent" TextAlignment="Center"  Style="{StaticResource Karamel}" Margin="0 0 0 7.25"/>
+                    <TextBox x:Name="chokolade_tjent" TextAlignment="Center"  Style="{StaticResource Chokolade}" Margin="0 0 0 7.25"/>
+                    <TextBox x:Name="pistacie_tjent" TextAlignment="Center"  Style="{StaticResource Pistacie}" Margin="0 0 0 7.25"/>
+                    <TextBox x:Name="jordbær_tjent" TextAlignment="Center"  Style="{StaticResource Jordbær}" Margin="0 0 0 7.25"/>
+                    <TextBox x:Name="solbær_tjent" TextAlignment="Center"  Style="{StaticResource Solbær}" Margin="0 0 0 7.25"/>
+                    <TextBox x:Name="hindbær_tjent" TextAlignment="Center"  Style="{StaticResource Hindbær}" Margin="0 0 0 7.25"/>
+                    <TextBox x:Name="vanilje_tjent" TextAlignment="Center"  Style="{StaticResource Vanilje}" Margin="0 0 0 7.25"/>
+                    
+                </StackPanel>
+
+                <StackPanel Grid.Column="4">
+                    <TextBlock Text="Solgt" Style="{StaticResource TitleBlock}"/>
+                    <TextBox x:Name="lakrids_solgt" TextAlignment="Center"  Style="{StaticResource Lakrids}" Margin="0 0 0 7.25"/>
+                    <TextBox x:Name="karamel_solgt" TextAlignment="Center"  Style="{StaticResource Karamel}" Margin="0 0 0 7.25"/>
+                    <TextBox x:Name="chokolade_solgt" TextAlignment="Center"  Style="{StaticResource Chokolade}" Margin="0 0 0 7.25"/>
+                    <TextBox x:Name="pistacie_solgt" TextAlignment="Center"  Style="{StaticResource Pistacie}" Margin="0 0 0 7.25"/>
+                    <TextBox x:Name="jordbær_solgt" TextAlignment="Center"  Style="{StaticResource Jordbær}" Margin="0 0 0 7.25"/>
+                    <TextBox x:Name="solbær_solgt" TextAlignment="Center"  Style="{StaticResource Solbær}" Margin="0 0 0 7.25"/>
+                    <TextBox x:Name="hindbær_solgt" TextAlignment="Center"  Style="{StaticResource Hindbær}" Margin="0 0 0 7.25"/>
+                    <TextBox x:Name="vanilje_solgt" TextAlignment="Center"  Style="{StaticResource Vanilje}" Margin="0 0 0 7.25"/>
+                    
+                </StackPanel>
+                
+                <StackPanel Grid.Column="5">
+                    <TextBlock Text="Lager" Style="{StaticResource TitleBlock}"/>
                     <!-- Is justering af antal -->
                     <Grid>
- 
+
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
- 
+
+                        <Button Click="lakrids_minus_click" Grid.Column="0" Content="-" Style="{StaticResource Lakrids}" Margin="0 0 0 5"/>
+                        <TextBox x:Name="lakrids_antal" Text="100" Grid.Column="1" TextAlignment="Center"  Style="{StaticResource Lakrids}" Margin="0 0 0 5"/>
+                        <Button Click="lakrids_plus_click" Grid.Column="2" Content="+" Style="{StaticResource Lakrids}" Margin="0 0 0 5"/>
+
+                    </Grid>
+
+                    <!-- Is justering af antal -->
+                    <Grid>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
                         <Button Click="karamel_minus_click" Grid.Column="0" Content="-" Style="{StaticResource Karamel}" Margin="0 0 0 5"/>
                         <TextBox x:Name="karamel_antal" Text="100" Grid.Column="1" Style="{StaticResource Karamel}" TextAlignment="Center" Margin="0 0 0 5"/>
                         <Button Click="karamel_plus_click" Grid.Column="2" Content="+" Style="{StaticResource Karamel}" Margin="0 0 0 5"/>
- 
+
                     </Grid>
- 
-                    <Button Click="chokolade_info_click" Content="Chokolade" Style="{StaticResource Chokolade}"/>
+
                     <!-- Is justering af antal -->
                     <Grid>
- 
+
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
- 
+
                         <Button Click="chokolade_minus_click" Grid.Column="0" Content="-" Style="{StaticResource Chokolade}" Margin="0 0 0 5"/>
                         <TextBox x:Name="chokolade_antal" Text="100" Grid.Column="1" Style="{StaticResource Chokolade}" Margin="0 0 0 5" TextAlignment="Center" />
                         <Button Click="chokolade_plus_click" Grid.Column="2" Content="+" Style="{StaticResource Chokolade}" Margin="0 0 0 5"/>
- 
+
                     </Grid>
- 
-                    <Button Click="pistacie_info_click" Content="Pistacie" Style="{StaticResource Pistacie}"/>
+
                     <!-- Is justering af antal -->
                     <Grid>
- 
+
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
- 
+
                         <Button Click="pistacie_minus_click" Grid.Column="0" Content="-" Style="{StaticResource Pistacie}" Margin="0 0 0 5"/>
                         <TextBox x:Name="pistacie_antal" Text="100" Grid.Column="1" Style="{StaticResource Pistacie}" TextAlignment="Center" Margin="0 0 0 5"/>
                         <Button Click="pistacie_plus_click" Grid.Column="2" Content="+" Style="{StaticResource Pistacie}" Margin="0 0 0 5"/>
- 
+
                     </Grid>
- 
-                    <Button Click="jordbær_info_click" Content="Jordbær" Style="{StaticResource Jordbær}"/>
+
                     <!-- Is justering af antal -->
                     <Grid>
- 
+
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
- 
+
                         <Button Click="jordbær_minus_click" Grid.Column="0" Content="-" Style="{StaticResource Jordbær}" Margin="0 0 0 5"/>
                         <TextBox x:Name="jordbær_antal" Text="100" Grid.Column="1" Style="{StaticResource Jordbær}" TextAlignment="Center" Margin="0 0 0 5"/>
                         <Button Click="jordbær_plus_click" Grid.Column="2" Content="+" Style="{StaticResource Jordbær}" Margin="0 0 0 5"/>
- 
+
                     </Grid>
- 
-                    <Button Click="solbær_info_click" Content="Solbær" Style="{StaticResource Solbær}"/>
+
                     <!-- Is justering af antal -->
                     <Grid>
-                    
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
- 
+
                         <Button Click="solbær_minus_click" Grid.Column="0" Content="-" Style="{StaticResource Solbær}" Margin="0 0 0 5"/>
                         <TextBox x:Name="solbær_antal" Text="100" Grid.Column="1" Style="{StaticResource Solbær}" TextAlignment="Center" Margin="0 0 0 5"/>
                         <Button Click="solbær_plus_click" Grid.Column="2" Content="+" Style="{StaticResource Solbær}" Margin="0 0 0 5"/>
- 
+
                     </Grid>
- 
-                    <Button Click="hindbær_info_click" Content="Hindbær" Style="{StaticResource Hindbær}"/>
+
                     <!-- Is justering af antal -->
                     <Grid>
- 
+
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
- 
+
                         <Button Click="hindbær_minus_click" Grid.Column="0" Content="-" Style="{StaticResource Hindbær}" Margin="0 0 0 5"/>
                         <TextBox x:Name="hindbær_antal" Text="100" Grid.Column="1" Style="{StaticResource Hindbær}" TextAlignment="Center" Margin="0 0 0 5"/>
                         <Button Click="hindbær_plus_click" Grid.Column="2" Content="+" Style="{StaticResource Hindbær}" Margin="0 0 0 5"/>
- 
+
                     </Grid>
- 
-                    <Button Click="vanilje_info_click" Content="Vanilje" Style="{StaticResource Vanilje}"/>
+
                     <!-- Is justering af antal -->
                     <Grid>
- 
+
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
- 
+
                         <Button Click="vanilje_minus_click" Grid.Column="0" Content="-" Style="{StaticResource Vanilje}" Margin="0 0 0 5"/>
                         <TextBox x:Name="vanilje_antal" Text="100" Grid.Column="1" Style="{StaticResource Vanilje}" TextAlignment="Center" Margin="0 0 0 5"/>
                         <Button Click="vanilje_plus_click" Grid.Column="2" Content="+" Style="{StaticResource Vanilje}" Margin="0 0 0 5"/>
-                    
                     </Grid>
                 </StackPanel>
-                
 
-                <StackPanel Grid.Column="1">
-                    <TextBlock Text="Info" Style="{StaticResource TitleBlock}"/>
-                    
+                <StackPanel Grid.Column="6">
                     <!-- <Image Source="is_billeder/lakridsis.jpg"/> -->
-                    
-                    <TextBlock x:Name="info" TextWrapping="Wrap" Text="Is Opskrift" Margin="20 0 0 0"/>
-                    
+                    <TextBox x:Name="info" TextWrapping="Wrap" Text="Klik på is for at få opskrift her." Margin="20 25 0 0" IsReadOnly="true"/>
                 </StackPanel>
-        </Grid>
+            </Grid>
+            
+        </StackPanel>
+        
     </Border>
 
 </Window>
